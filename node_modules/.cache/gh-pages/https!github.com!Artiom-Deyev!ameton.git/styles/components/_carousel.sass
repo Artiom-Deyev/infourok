@@ -1,0 +1,44 @@
+.carousel
+    position: relative
+    overflow: hidden
+    padding: 0 8px
+    &__list
+        display: flex
+        padding-top: 38px
+        padding-bottom: 40px
+        list-style: none
+    &__link
+        display: flex
+        width: 282px
+        height: 160px
+        text-decoration: none
+        margin-right: 24px
+        padding: 16px 0 0 16px
+        &:hover
+            @include hover-large
+    &__heading
+        margin-bottom: 8px
+        text-align: left
+    &__text
+        text-align: left
+    &__btn
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        top: 124px
+        z-index: 10
+        background: #FFFFFF
+        width: 44px
+        height: 44px
+        border-radius: 50%
+        border: 1px solid grey
+        cursor: pointer
+        &_right
+            right: 0
+        &_left
+            display: none
+            left: 0
+    &__btn-arrow
+        font-size: 30px
+        padding-bottom: 3px

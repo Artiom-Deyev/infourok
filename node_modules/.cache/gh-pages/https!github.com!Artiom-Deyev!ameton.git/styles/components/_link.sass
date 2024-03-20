@@ -1,0 +1,52 @@
+.link
+    &__item
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 56px
+        height: 56px
+        background: #F9F9F9
+        border-radius: 14px
+        cursor: pointer
+        margin-right: 14px
+        text-decoration: none
+        font-color: black
+        &::last-child
+            margin-right: 0
+        &:hover
+            @include hover-large
+    &__capt
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 160px
+        height: 48px
+        background: #FFFFFF
+        border-radius: 12px
+        margin-right: 8px
+        &:hover
+            @include hover-large
+        &_green
+            background: #36BA5F
+        &_wide
+            width: 224px
+    &__icon
+        margin: 0 8px 1px
+        &_wide
+            margin-left: 0
+    &__link
+        text-decoration: none
+
+// Медиа запросы
+@media (max-width: 767px)
+    .link
+        &__capt
+            width: 292px
+            margin-right: 0
+            margin-bottom: 8px
+            justify-content: start
+            &_wide
+                max-width: 240px
+                justify-content: center
+        &__text_small
+            font-size: 17px

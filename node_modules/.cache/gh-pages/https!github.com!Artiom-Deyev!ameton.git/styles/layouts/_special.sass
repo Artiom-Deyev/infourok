@@ -1,0 +1,45 @@
+.special
+    padding: 22px 0 0 40px
+    margin-bottom: 0 40px 80px 0
+    max-width: 690px
+    &__desc
+        display: flex
+        align-items: center
+        margin-bottom: 16px
+    &__heading
+        margin-right: 14px
+    &__icon
+        width: 24px
+    &__text
+        margin-bottom: 40px
+    &__caption
+        margin-bottom: 16px
+    &__feedback
+        display: flex
+        list-style: none
+        margin-bottom: 40px
+        padding-left: 0
+    &__socials
+        display: flex
+        margin-left: 8px
+
+// Медиа запросы
+@media (max-width: 767px)
+    .special
+        &__text
+            padding-right: 8%
+
+@media (max-width: 575px)
+    .special
+        &__desc
+            flex-direction: column
+            align-items: start
+        &__heading
+            margin-bottom: 16px
+        &__caption
+            padding-right: 8%
+        &__feedback
+            flex-direction: column
+            justify-content: center
+        &__socials
+            display: flex
