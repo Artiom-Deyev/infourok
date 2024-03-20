@@ -1,0 +1,60 @@
+.header
+    margin-top: 40px
+    text-align: center
+    margin-bottom: 82px
+    &__block
+        display: flex
+        align-items: center
+        flex-direction: column
+        padding-top: 40px
+        background-color: #93BBEA
+        background-image: url('/src/assets/header-background.png')
+        background-repeat: no-repeat
+        background-position: top 34px left 0
+    &__heading
+        margin-bottom: 4px
+    &__text
+        max-width: 535px
+        margin-bottom: 40px
+    &__list
+        display: flex
+        justify-content: center
+        margin-bottom: 54px
+    &__link
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 160px
+        height: 48px
+        background: #FFFFFF
+        border-radius: 12px
+        margin-right: 8px
+        &:last-child
+            margin-right: 0
+    &__icon
+        margin: 0 8px 1px
+
+// Медиа запросы
+@media (max-width: 767px)
+    .header
+        &__list
+            flex-direction: column
+        &__link
+            width: 300px
+            margin-right: 0
+            margin-bottom: 8px
+            justify-content: start
+        &__text
+            margin-bottom: 16px
+            &_small
+                font-size: 22px
+        &__icon
+            margin-left: 24px
+
+@media (max-width: 575px)
+    .header
+        margin-bottom: 40px
+        &__heading
+            padding: 0 4%
+        &__text
+            padding: 0 4%

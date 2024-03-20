@@ -1,0 +1,16 @@
+{
+  "name": "ameton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "logic.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://artiom-deyev.github.io/ameton",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

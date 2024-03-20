@@ -1,0 +1,52 @@
+body
+    font-family: Arial
+
+.text
+    ont-family: Raleway
+    font-weight: 400
+    font-size: 17px
+    line-height: 23.8px
+    color: #1A1A1A
+    &_white
+        color: #FFFFFF
+    &_grey
+        color: #949494
+    &_small
+        font-weight: 400
+        font-size: 15px
+        line-height: 21px
+    &_extra-small
+        font-weight: 300
+        font-size: 13px
+        line-height: 15.6px
+    &_bold
+        font-weight: 700
+    &_medium-bold
+        font-weight: 500
+
+.heading
+    color: #1A1A1A
+    &_main
+        font-weight: 800
+        font-size: 60px
+        line-height: 72px
+    &_secondary
+        font-weight: 600
+        font-size: 40px
+        line-height: 48px
+    &_small
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        color: #1A1A1A
+    &_bold
+        font-weight: 800
+
+// Медиа запросы
+@media (max-width: 575px)
+    .heading
+        &_main
+            font-size: 48px
+            line-height: 50px
+        &_secondary
+            font-size: 30px
