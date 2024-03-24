@@ -1,60 +1,31 @@
 .header
-    margin-top: 40px
-    text-align: center
-    margin-bottom: 82px
-    &__block
-        display: flex
-        align-items: center
-        flex-direction: column
-        padding-top: 40px
-        background-color: #93BBEA
-        background-image: url('../assets/header-background.png')
+    background: linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 98.2%)
+    &__inner
+        overflow: auto
+        position: relative
+        background: url('../assets/img-background-header-portrait.png') right 90px top 80%, url('../assets/img-background-header.png') top 110px right -3px, url('../assets/img-background-header-small.png') top 120px left -90px
         background-repeat: no-repeat
-        background-position: top 34px left 0
-    &__heading
-        margin-bottom: 4px
-    &__text
-        max-width: 535px
-        margin-bottom: 40px
-    &__list
-        display: flex
-        justify-content: center
-        margin-bottom: 54px
-    &__link
-        display: flex
-        align-items: center
-        justify-content: center
-        width: 160px
-        height: 48px
-        background: #FFFFFF
-        border-radius: 12px
-        margin-right: 8px
-        &:last-child
-            margin-right: 0
-    &__icon
-        margin: 0 8px 1px
+    &__polygon
+        position: absolute
+        bottom: 0
 
 // Медиа запросы
+@media (max-width: 1214px)
+    .header
+        &__inner
+            background: url('../assets/img-background-header-portrait.png') right 90px top 80%, url('../assets/img-background-header-small.png') top 120px left -90px
+            background-repeat: no-repeat
+
+@media (max-width: 1124px)
+    .header
+        &__inner
+            background: url('../assets/img-background-header-portrait.png') right -280px top 80%, url('../assets/img-background-header-small.png') top 120px left -30px
+            background-repeat: no-repeat
+
 @media (max-width: 767px)
     .header
-        &__list
-            flex-direction: column
-        &__link
-            width: 300px
-            margin-right: 0
-            margin-bottom: 8px
-            justify-content: start
-        &__text
-            margin-bottom: 16px
-            &_small
-                font-size: 22px
-        &__icon
-            margin-left: 24px
-
-@media (max-width: 575px)
-    .header
-        margin-bottom: 40px
-        &__heading
-            padding: 0 4%
-        &__text
-            padding: 0 4%
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 99.4%)
+        &__inner
+            background: url('../assets/image-background-header-portrait-small.png') right 0 bottom 40px
+            background-repeat: no-repeat

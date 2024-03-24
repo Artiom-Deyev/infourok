@@ -1,0 +1,49 @@
+.waves
+    position: relative
+    margin-left: -7px
+    &__block
+        position: absolute
+        width: 90px
+        height: 90px
+        border-radius: 100%
+        border: 2px solid #FF885E
+        animation: waves 2s infinite
+        top: 4px
+        left: 5px
+    &__price
+        position: absolute
+        top: 16px
+        left: 17px
+        width: 70px
+        height: 70px
+        border-radius: 100%
+        position: absolute
+        background: #FF885E
+        z-index: 1
+    &__discount
+        text-align: center
+        padding-top: 13px
+        padding-left: 15px
+        font-weight: 600
+        font-size: 34px
+        line-height: 43.2px
+        white-space: nowrap
+
+.wave-1
+    animation-delay: 1s
+
+.wave-2
+    animation-delay: 1.5s
+
+.wave-3
+    animation-delay: 2s
+
+    // Медиа запросы
+@media (max-width: 620px)
+    .waves
+        &__price
+            top: -50px
+            left: 248px
+        &__block
+            top: -62px
+            left: 236px

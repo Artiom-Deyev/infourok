@@ -1,7 +1,6 @@
 {
   "name": "ameton",
   "version": "1.0.0",
-  "description": "",
   "main": "logic.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
@@ -9,8 +8,59 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://artiom-deyev.github.io/ameton",
+  "homepage": "https://artiom-deyev.github.io/infourok",
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+  "dependencies": {
+    "array-uniq": "^1.0.3",
+    "balanced-match": "^1.0.2",
+    "array-union": "^1.0.2",
+    "async": "^3.2.5",
+    "commondir": "^1.0.1",
+    "commander": "^11.1.0",
+    "email-addresses": "^5.0.0",
+    "concat-map": "^0.0.1",
+    "brace-expansion": "^1.1.11",
+    "escape-string-regexp": "^1.0.5",
+    "filename-reserved-regex": "^2.0.0",
+    "find-cache-dir": "^3.3.2",
+    "filenamify": "^4.3.0",
+    "fs.realpath": "^1.0.0",
+    "find-up": "^4.1.0",
+    "globby": "^6.1.0",
+    "graceful-fs": "^4.2.11",
+    "glob": "^7.2.3",
+    "fs-extra": "^11.2.0",
+    "inflight": "^1.0.6",
+    "inherits": "^2.0.4",
+    "locate-path": "^5.0.0",
+    "jsonfile": "^6.1.0",
+    "object-assign": "^4.1.1",
+    "make-dir": "^3.1.0",
+    "minimatch": "^3.1.2",
+    "once": "^1.4.0",
+    "p-locate": "^4.1.0",
+    "p-try": "^2.2.0",
+    "p-limit": "^2.3.0",
+    "pinkie": "^2.0.4",
+    "pinkie-promise": "^2.0.1",
+    "path-exists": "^4.0.0",
+    "pify": "^2.3.0",
+    "pkg-dir": "^4.2.0",
+    "semver": "^6.3.1",
+    "path-is-absolute": "^1.0.1",
+    "strip-outer": "^1.0.1",
+    "trim-repeated": "^1.0.0",
+    "universalify": "^2.0.1",
+    "wrappy": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artiom-Deyev/ameton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Artiom-Deyev/ameton/issues"
+  },
+  "description": ""
 }
