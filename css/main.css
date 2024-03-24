@@ -109,7 +109,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 99.4%);
   }
   .header__inner {
-    background: url("../assets/image-background-header-portrait-small.png") right 0 bottom 40px;
+    background: url("../assets/image-background-header-portrait-small.png") right 0 bottom 36px;
     background-repeat: no-repeat;
   }
 }
