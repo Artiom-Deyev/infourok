@@ -1,0 +1,31 @@
+.header
+    background: linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 98.2%)
+    &__inner
+        overflow: auto
+        position: relative
+        background: url('../assets/img-background-header-portrait.png') right 90px top 80%, url('../assets/img-background-header.png') top 110px right -3px, url('../assets/img-background-header-small.png') top 120px left -90px
+        background-repeat: no-repeat
+    &__polygon
+        position: absolute
+        bottom: 0
+
+// Медиа запросы
+@media (max-width: 1214px)
+    .header
+        &__inner
+            background: url('../assets/img-background-header-portrait.png') right 90px top 80%, url('../assets/img-background-header-small.png') top 120px left -90px
+            background-repeat: no-repeat
+
+@media (max-width: 1124px)
+    .header
+        &__inner
+            background: url('../assets/img-background-header-portrait.png') right -280px top 80%, url('../assets/img-background-header-small.png') top 120px left -30px
+            background-repeat: no-repeat
+
+@media (max-width: 767px)
+    .header
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 99.4%)
+        &__inner
+            background: url('../assets/image-background-header-portrait-small.png') right 0 bottom 40px
+            background-repeat: no-repeat

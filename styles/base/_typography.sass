@@ -1,0 +1,44 @@
+.text
+    font-weight: 600
+    font-size: 16px
+    line-height: 20.8px
+    color: #000000
+    &_white
+        color: white
+    &_subtle
+        color: #C9C3F3
+    &_yellow
+        color: #FFDE00
+    &_small
+        font-weight: 400
+        font-size: 14px
+        line-height: 16.8px
+
+.heading
+    color: white
+    font-weight: 700
+    font-size: 48px
+    line-height: 57.6px
+    &_secondary
+        font-weight: 600
+        font-size: 24px
+        line-height: 28.8px
+    &_white
+        color: white
+    &_yellow
+        color: #FFDE00
+    &_subtle
+        color: #C9C3F3
+
+// Медиа запросы
+@media (max-wdith: 620px)
+    .heading
+        font-weight: 600
+        font-size: 28px
+        line-height: 28.8px
+
+@media (max-width: 575px)
+    .heading
+        font-weight: 600
+        font-size: 24px
+        line-height: 28.8px
